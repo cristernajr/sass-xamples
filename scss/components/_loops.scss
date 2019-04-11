@@ -1,0 +1,18 @@
+$bp: (
+    m: 640px,
+    l: 1024px
+);
+
+@for $i from 1 through 10 {
+    .cols-#{$i} {
+        width: $i * 10%;
+        background: green;
+        color: #fff;
+    }
+
+    @media screen and (min-width: map-get($bp,m)) {
+        .cols-m-#{$i * 5} {
+            width: $i * 5%;
+        }
+    }
+}
