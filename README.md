@@ -1,2 +1,2 @@
 # sass-xamples
-Xamples using Sass.
+Sass boilerplate.
